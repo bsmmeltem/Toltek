@@ -1,0 +1,784 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D1DFC2C4-A5F7-48F7-BF7E-0A65CACD66CF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ToltekLMSPortal</RootNamespace>
+    <AssemblyName>ToltekLMSPortal</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\css\prism.css" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\icon\apple-touch-icon-48-precomposed.png" />
+    <Content Include="Content\icon\apple-touch-icon-57-precomposed.png" />
+    <Content Include="Content\icon\favicon.png" />
+    <Content Include="Content\images\about\index1\1.jpg" />
+    <Content Include="Content\images\about\index1\10.jpg" />
+    <Content Include="Content\images\about\index1\11.jpg" />
+    <Content Include="Content\images\about\index1\2.jpg" />
+    <Content Include="Content\images\about\index1\3.jpg" />
+    <Content Include="Content\images\about\index1\4.jpg" />
+    <Content Include="Content\images\about\index1\5.jpg" />
+    <Content Include="Content\images\about\index1\6.jpg" />
+    <Content Include="Content\images\about\index1\7.jpg" />
+    <Content Include="Content\images\about\index1\8.jpg" />
+    <Content Include="Content\images\about\index1\9.jpg" />
+    <Content Include="Content\images\about\index1\blog\1.jpg" />
+    <Content Include="Content\images\about\index1\blog\2.jpg" />
+    <Content Include="Content\images\about\index1\course\gril\1.jpg" />
+    <Content Include="Content\images\about\index1\course\gril\2.jpg" />
+    <Content Include="Content\images\about\index1\course\gril\3.jpg" />
+    <Content Include="Content\images\about\index1\course\gril\4.jpg" />
+    <Content Include="Content\images\about\index1\course\gril\5.jpg" />
+    <Content Include="Content\images\about\index1\course\gril\6.jpg" />
+    <Content Include="Content\images\about\index1\course\gril\7.jpg" />
+    <Content Include="Content\images\about\index1\course\list\1.jpg" />
+    <Content Include="Content\images\about\index1\course\list\2.jpg" />
+    <Content Include="Content\images\about\index1\course\list\3.jpg" />
+    <Content Include="Content\images\about\index1\course\list\4.jpg" />
+    <Content Include="Content\images\about\index1\course\list\5.jpg" />
+    <Content Include="Content\images\about\index1\course\list\6.jpg" />
+    <Content Include="Content\images\about\index1\course\single\1.jpg" />
+    <Content Include="Content\images\about\index1\course\single\2.jpg" />
+    <Content Include="Content\images\about\index1\course\single\3.jpg" />
+    <Content Include="Content\images\about\index1\course\single\4.jpg" />
+    <Content Include="Content\images\about\index1\course\single\5.jpg" />
+    <Content Include="Content\images\about\index1\event\gril\1.jpg" />
+    <Content Include="Content\images\about\index1\event\gril\2.jpg" />
+    <Content Include="Content\images\about\index1\event\gril\3.jpg" />
+    <Content Include="Content\images\about\index1\event\gril\4.jpg" />
+    <Content Include="Content\images\about\index1\event\gril\5.jpg" />
+    <Content Include="Content\images\about\index1\event\gril\6.jpg" />
+    <Content Include="Content\images\about\index1\event\gril\7.jpg" />
+    <Content Include="Content\images\about\index1\event\list\1.jpg" />
+    <Content Include="Content\images\about\index1\event\list\2.jpg" />
+    <Content Include="Content\images\about\index1\event\list\3.jpg" />
+    <Content Include="Content\images\about\index1\event\list\4.jpg" />
+    <Content Include="Content\images\about\index1\event\list\5.jpg" />
+    <Content Include="Content\images\about\index1\event\list\6.jpg" />
+    <Content Include="Content\images\about\index1\event\list\7.jpg" />
+    <Content Include="Content\images\about\index1\event\single\1.jpg" />
+    <Content Include="Content\images\about\index1\event\single\2.jpg" />
+    <Content Include="Content\images\about\index1\event\single\3.jpg" />
+    <Content Include="Content\images\about\index1\event\single\4.jpg" />
+    <Content Include="Content\images\about\index1\event\single\5.jpg" />
+    <Content Include="Content\images\about\index2\1.png" />
+    <Content Include="Content\images\about\index2\2.png" />
+    <Content Include="Content\images\about\index3\1.png" />
+    <Content Include="Content\images\about\index4\1.jpg" />
+    <Content Include="Content\images\about\index4\2.jpg" />
+    <Content Include="Content\images\about\index5\1.png" />
+    <Content Include="Content\images\about\index7\1.png" />
+    <Content Include="Content\images\about\index7\2.png" />
+    <Content Include="Content\images\about\index7\3.png" />
+    <Content Include="Content\images\about\index7\4.png" />
+    <Content Include="Content\images\about\index7\5.png" />
+    <Content Include="Content\images\blog\1.jpg" />
+    <Content Include="Content\images\blog\2.jpg" />
+    <Content Include="Content\images\blog\3.jpg" />
+    <Content Include="Content\images\blog\4.jpg" />
+    <Content Include="Content\images\blog\5.jpg" />
+    <Content Include="Content\images\blog\6.jpg" />
+    <Content Include="Content\images\blog\7.jpg" />
+    <Content Include="Content\images\blog\8.jpg" />
+    <Content Include="Content\images\blog\9.jpg" />
+    <Content Include="Content\images\blog\sg1.jpg" />
+    <Content Include="Content\images\blog\widget\1.jpg" />
+    <Content Include="Content\images\blog\widget\10.jpg" />
+    <Content Include="Content\images\blog\widget\11.jpg" />
+    <Content Include="Content\images\blog\widget\12.jpg" />
+    <Content Include="Content\images\blog\widget\13.jpg" />
+    <Content Include="Content\images\blog\widget\2.jpg" />
+    <Content Include="Content\images\blog\widget\3.jpg" />
+    <Content Include="Content\images\blog\widget\4.jpg" />
+    <Content Include="Content\images\blog\widget\5.jpg" />
+    <Content Include="Content\images\blog\widget\6.jpg" />
+    <Content Include="Content\images\blog\widget\7.jpg" />
+    <Content Include="Content\images\blog\widget\8.jpg" />
+    <Content Include="Content\images\blog\widget\9.jpg" />
+    <Content Include="Content\images\clients\1.png" />
+    <Content Include="Content\images\clients\2.png" />
+    <Content Include="Content\images\clients\3.png" />
+    <Content Include="Content\images\clients\4.png" />
+    <Content Include="Content\images\clients\about\index1\1.jpg" />
+    <Content Include="Content\images\clients\about\index1\10.jpg" />
+    <Content Include="Content\images\clients\about\index1\11.jpg" />
+    <Content Include="Content\images\clients\about\index1\2.jpg" />
+    <Content Include="Content\images\clients\about\index1\3.jpg" />
+    <Content Include="Content\images\clients\about\index1\4.jpg" />
+    <Content Include="Content\images\clients\about\index1\5.jpg" />
+    <Content Include="Content\images\clients\about\index1\6.jpg" />
+    <Content Include="Content\images\clients\about\index1\7.jpg" />
+    <Content Include="Content\images\clients\about\index1\8.jpg" />
+    <Content Include="Content\images\clients\about\index1\9.jpg" />
+    <Content Include="Content\images\clients\about\index1\blog\1.jpg" />
+    <Content Include="Content\images\clients\about\index1\blog\2.jpg" />
+    <Content Include="Content\images\clients\about\index1\course\gril\1.jpg" />
+    <Content Include="Content\images\clients\about\index1\course\gril\2.jpg" />
+    <Content Include="Content\images\clients\about\index1\course\gril\3.jpg" />
+    <Content Include="Content\images\clients\about\index1\course\gril\4.jpg" />
+    <Content Include="Content\images\clients\about\index1\course\gril\5.jpg" />
+    <Content Include="Content\images\clients\about\index1\course\gril\6.jpg" />
+    <Content Include="Content\images\clients\about\index1\course\gril\7.jpg" />
+    <Content Include="Content\images\clients\about\index1\course\list\1.jpg" />
+    <Content Include="Content\images\clients\about\index1\course\list\2.jpg" />
+    <Content Include="Content\images\clients\about\index1\course\list\3.jpg" />
+    <Content Include="Content\images\clients\about\index1\course\list\4.jpg" />
+    <Content Include="Content\images\clients\about\index1\course\list\5.jpg" />
+    <Content Include="Content\images\clients\about\index1\course\list\6.jpg" />
+    <Content Include="Content\images\clients\about\index1\event\gril\1.jpg" />
+    <Content Include="Content\images\clients\about\index1\event\gril\2.jpg" />
+    <Content Include="Content\images\clients\about\index1\event\gril\3.jpg" />
+    <Content Include="Content\images\clients\about\index1\event\gril\4.jpg" />
+    <Content Include="Content\images\clients\about\index1\event\gril\5.jpg" />
+    <Content Include="Content\images\clients\about\index1\event\gril\6.jpg" />
+    <Content Include="Content\images\clients\about\index1\event\gril\7.jpg" />
+    <Content Include="Content\images\clients\about\index1\event\list\1.jpg" />
+    <Content Include="Content\images\clients\about\index1\event\list\2.jpg" />
+    <Content Include="Content\images\clients\about\index1\event\list\3.jpg" />
+    <Content Include="Content\images\clients\about\index1\event\list\4.jpg" />
+    <Content Include="Content\images\clients\about\index1\event\list\5.jpg" />
+    <Content Include="Content\images\clients\about\index1\event\list\6.jpg" />
+    <Content Include="Content\images\clients\about\index1\event\list\7.jpg" />
+    <Content Include="Content\images\clients\about\index2\1.png" />
+    <Content Include="Content\images\clients\about\index2\2.png" />
+    <Content Include="Content\images\clients\about\index3\1.png" />
+    <Content Include="Content\images\clients\about\index4\1.jpg" />
+    <Content Include="Content\images\clients\about\index4\2.jpg" />
+    <Content Include="Content\images\clients\about\index5\1.png" />
+    <Content Include="Content\images\clients\about\index7\1.png" />
+    <Content Include="Content\images\clients\about\index7\2.png" />
+    <Content Include="Content\images\clients\about\index7\3.png" />
+    <Content Include="Content\images\clients\about\index7\4.png" />
+    <Content Include="Content\images\clients\about\index7\5.png" />
+    <Content Include="Content\images\fancybox_overlay.png" />
+    <Content Include="Content\images\flickr\1.jpg" />
+    <Content Include="Content\images\flickr\2.jpg" />
+    <Content Include="Content\images\flickr\3.jpg" />
+    <Content Include="Content\images\flickr\4.jpg" />
+    <Content Include="Content\images\flickr\5.jpg" />
+    <Content Include="Content\images\flickr\6.jpg" />
+    <Content Include="Content\images\icon\1.png" />
+    <Content Include="Content\images\icon\2.png" />
+    <Content Include="Content\images\icon\3.png" />
+    <Content Include="Content\images\icon\4.png" />
+    <Content Include="Content\images\icon\5.png" />
+    <Content Include="Content\images\icon\6.png" />
+    <Content Include="Content\images\icon\7.png" />
+    <Content Include="Content\images\logo-1.png" />
+    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\map.png" />
+    <Content Include="Content\images\member\1.jpg" />
+    <Content Include="Content\images\member\1.png" />
+    <Content Include="Content\images\member\2.jpg" />
+    <Content Include="Content\images\member\2.png" />
+    <Content Include="Content\images\member\3.jpg" />
+    <Content Include="Content\images\member\3.png" />
+    <Content Include="Content\images\member\4.jpg" />
+    <Content Include="Content\images\member\5.jpg" />
+    <Content Include="Content\images\member\6.jpg" />
+    <Content Include="Content\images\member\7.jpg" />
+    <Content Include="Content\images\member\8.jpg" />
+    <Content Include="Content\images\member\9.jpg" />
+    <Content Include="Content\images\parallax\bg-parallax1.jpg" />
+    <Content Include="Content\images\parallax\bg-parallax2.jpg" />
+    <Content Include="Content\images\parallax\bg-parallax3.jpg" />
+    <Content Include="Content\images\parallax\bg-parallax4.jpg" />
+    <Content Include="Content\images\parallax\bg-parallax5.jpg" />
+    <Content Include="Content\images\parallax\bg-parallax6.jpg" />
+    <Content Include="Content\images\parallax\bg-parallax7.jpg" />
+    <Content Include="Content\images\pattern\1.png" />
+    <Content Include="Content\images\pattern\10.png" />
+    <Content Include="Content\images\pattern\2.png" />
+    <Content Include="Content\images\pattern\3.png" />
+    <Content Include="Content\images\pattern\4.png" />
+    <Content Include="Content\images\pattern\5.png" />
+    <Content Include="Content\images\pattern\6.png" />
+    <Content Include="Content\images\pattern\7.png" />
+    <Content Include="Content\images\pattern\8.png" />
+    <Content Include="Content\images\pattern\9.png" />
+    <Content Include="Content\images\portfolio-detail\1.jpg" />
+    <Content Include="Content\images\portfolio\1.jpg" />
+    <Content Include="Content\images\portfolio\2.jpg" />
+    <Content Include="Content\images\portfolio\3.jpg" />
+    <Content Include="Content\images\portfolio\4.jpg" />
+    <Content Include="Content\images\portfolio\5.jpg" />
+    <Content Include="Content\images\portfolio\6.jpg" />
+    <Content Include="Content\images\portfolio\7.jpg" />
+    <Content Include="Content\images\portfolio\8.jpg" />
+    <Content Include="Content\images\slides\1.jpg" />
+    <Content Include="Content\images\slides\1.png" />
+    <Content Include="Content\images\slides\2.jpg" />
+    <Content Include="Content\images\slides\2.png" />
+    <Content Include="Content\javascript\bootstrap.min.js" />
+    <Content Include="Content\javascript\gmap3.min.js" />
+    <Content Include="Content\javascript\html5.js" />
+    <Content Include="Content\javascript\html5shiv.js" />
+    <Content Include="Content\javascript\imagesloaded.min.js" />
+    <Content Include="Content\javascript\jquery-countTo.js" />
+    <Content Include="Content\javascript\jquery-validate.js" />
+    <Content Include="Content\javascript\jquery-waypoints.js" />
+    <Content Include="Content\javascript\jquery.bxslider.js" />
+    <Content Include="Content\javascript\jquery.cookie.js" />
+    <Content Include="Content\javascript\jquery.easing.1.3.min.js" />
+    <Content Include="Content\javascript\jquery.easing.js" />
+    <Content Include="Content\javascript\jquery.easypiechart.min.js" />
+    <Content Include="Content\javascript\jquery.fancybox.js" />
+    <Content Include="Content\javascript\jquery.fitvids.js" />
+    <Content Include="Content\javascript\jquery.flexslider-min.js" />
+    <Content Include="Content\javascript\jquery.flexslider.js" />
+    <Content Include="Content\javascript\jquery.gomap-1.3.2.min.js" />
+    <Content Include="Content\javascript\jquery.isotope.min.js" />
+    <Content Include="Content\javascript\jquery.matchHeight-min.js" />
+    <Content Include="Content\javascript\jquery.min.js" />
+    <Content Include="Content\javascript\jquery.nav.js" />
+    <Content Include="Content\javascript\jquery.scrollTo.js" />
+    <Content Include="Content\javascript\jquery.sticky.js" />
+    <Content Include="Content\javascript\jquery.themepunch.revolution.min.js" />
+    <Content Include="Content\javascript\jquery.themepunch.tools.min.js" />
+    <Content Include="Content\javascript\jquery.tweet.min.js" />
+    <Content Include="Content\javascript\main.js" />
+    <Content Include="Content\javascript\masonry.pkgd.js" />
+    <Content Include="Content\javascript\owl.carousel.js" />
+    <Content Include="Content\javascript\parallax.js" />
+    <Content Include="Content\javascript\prism.js" />
+    <Content Include="Content\javascript\respond.min.js" />
+    <Content Include="Content\javascript\slider.js" />
+    <Content Include="Content\javascript\smoothscroll.js" />
+    <Content Include="Content\javascript\switcher.js" />
+    <Content Include="Content\stylesheets\animate.css" />
+    <Content Include="Content\stylesheets\bootstrap.css" />
+    <Content Include="Content\stylesheets\colors\color1.css" />
+    <Content Include="Content\stylesheets\colors\color2.css" />
+    <Content Include="Content\stylesheets\colors\color3.css" />
+    <Content Include="Content\stylesheets\colors\color4.css" />
+    <Content Include="Content\stylesheets\colors\color5.css" />
+    <Content Include="Content\stylesheets\flexslider.css" />
+    <Content Include="Content\stylesheets\font-awesome.css" />
+    <Content Include="Content\stylesheets\icomoon.css" />
+    <Content Include="Content\stylesheets\jquery.fancybox.css" />
+    <Content Include="Content\stylesheets\owl.carousel.css" />
+    <Content Include="Content\stylesheets\responsive.css" />
+    <Content Include="Content\stylesheets\revolution-slider.css" />
+    <Content Include="Content\stylesheets\shortcodes.css" />
+    <Content Include="Content\stylesheets\style.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Models\Portal.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Portal.edmx</DependentUpon>
+      <LastGenOutput>Portal.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Portal.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Portal.edmx</DependentUpon>
+      <LastGenOutput>Portal.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Announce.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Assignment.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AssignmentDates.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AssignmentEnrollment.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AssignmentFiles.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AssignmentStats.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AssignmentTitle.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Calendar.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Category.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ColorSet.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Company.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CompanySetting.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CompanyStats.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Container.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Content.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ContentEnrollment.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ContentFile.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ContentFileStats.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ContentSession.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ContentStats.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ContentTitles.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ContentType.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Control.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ControlCourse.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Course.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CourseSales.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CourseSettings.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CourseStats.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Data.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Days.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Department.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Enrollment.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EnrollmentStats.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Exam.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ExamAnswer.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ExamDates.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ExamEnrollment.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ExamQuestion.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ExamQuestionStats.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ExamQuestionTitles.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ExamSession.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ExamStats.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ExamTitles.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Faculty.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Faq.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Group.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GroupStats.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GroupTeacher.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Host.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Invoice.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Lesson.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Limit.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Link.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Login.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Mail.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MailTemplate.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Payment.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Portal.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Portal.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Portal.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Portal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Portal.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Price.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Report.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ReportCategory.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ReportQuery.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Request.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Resource.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Role.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Setting.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Social.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SupportCategory.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SupportTitle.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SyncItem.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SyncLog.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Term.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Ticket.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TicketAction.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TicketMessage.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Title.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Unit.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UnitManager.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UnitStats.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UnitTerms.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UnitTitles.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserClaims.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserDevice.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserInvoice.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserLogins.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserPermissions.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserSimulates.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserStats.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VClass.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VClassEnrollment.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VClassEnrollment_Bak.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VClassProvider.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VClassSchedule.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VClassStats.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VClassTitles.cs">
+      <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\fonts\flexslider-icon.ttf" />
+    <Content Include="Content\fonts\flexslider-icon.woff" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
+    <EntityDeploy Include="Models\Portal.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Portal.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Portal.edmx.diagram">
+      <DependentUpon>Portal.edmx</DependentUpon>
+    </Content>
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_LayoutHead.cshtml" />
+    <Content Include="Views\Shared\_LayoutScripts.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54956</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54956/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

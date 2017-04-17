@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    @Html.Partial("_LayoutHead")
+    @RenderSection("Head", required: false)
+   
+</head>
+<body class="header-sticky">
+    <div class="boxed">
+
+        <div class="menu-hover">
+            <div class="btn-menu">
+                <span></span>
+            </div><!-- //mobile menu button -->
+        </div>
+
+        <div class="header-inner-pages">
+            <div class="top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <nav class="navbar menu-top">
+                                <ul class="menu">
+                                    <li class="home">
+                                        <a href="blog.html">Blog</a>
+                                        <ul class="submenu">
+                                            <li><a href="blog-single.html">Blog Single</a></li>
+                                        </ul><!-- /.submenu -->
+                                    </li>
+                                    @*<li>
+                                        <a href="portfolio.html">Portfolio</a>
+                                        <ul class="submenu">
+                                            <li><a href="portfolio-single.html">Portfolio Single</a></li>
+                                        </ul><!-- /.submenu -->
+                                    </li>
+                                    <li>
+                                        <a href="event-grid.html">Events</a>
+                                        <ul class="submenu">
+                                            <li><a href="event-list.html">Events List</a></li>
+                                            <li><a href="event-single.html">Events Single</a></li>
+                                        </ul><!-- /.submenu -->
+                                    </li>
+                                    <li>
+                                        <a href="course-grid.html">Courses</a>
+                                        <ul class="submenu">
+                                            <li><a href="course-list.html">Courses List</a></li>
+                                            <li><a href="course-single.html">Courses Single</a></li>
+                                        </ul><!-- /.submenu -->
+                                    </li>
+                                    <li>
+                                        <a href="member.html">Member</a>
+                                        <ul class="submenu">
+                                            <li><a href="member-single.html">Members Single</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul><!-- /.submenu -->
+                                    </li>*@
+                                </ul><!-- /.menu -->
+                            </nav><!-- /.mainnav -->
+
+                            <a class="navbar-right search-toggle show-search" href="#">
+                                <i class="fa fa-search"></i>
+                            </a>
+
+                            <div class="submenu top-search">
+                                <form class="search-form">
+                                    <div class="input-group">
+                                        <input type="search" class="search-field" placeholder="Search Here">
+                                        <span class="input-group-btn">
+                                            <button type="submit"><i class="fa fa-search fa-4x"></i></button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="navbar-right topnav-sidebar">
+                                <ul class="textwidget">
+                                    <li>
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-youtube"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- col-md-12 -->
+                    </div><!-- row -->
+                </div><!-- container -->
+            </div><!-- Top -->
+        </div><!-- header-inner-pages -->
+        <!-- Header -->
+        <header id="header" class="header v2">
+            <div class="header-wrap">
+                <div class="container">
+                    <div class="header-wrap clearfix">
+
+                        <div id="logo" class="logo">
+                            <a href="index.html" rel="home">
+                                <img src="~/Content/images/logo-1.png" alt="image">
+                            </a>
+
+                            <div class="navbar-right callout-text">
+                                <p>Call Us <strong>019394745893</strong></p>
+                                <p>Opening Hour <strong>7:00am - 9:00pm</strong></p>
+                            </div>
+                        </div><!-- /.logo -->
+                    </div><!-- /.header-wrap -->
+                </div><!-- /.container-->
+            </div><!-- /.header-wrap-->
+        </header><!-- /.header -->
+        <header id="header" class="header v3 main-menu">
+            <div class="container">
+                <nav id="mainnav" class="mainnav v1 v2">
+                    <ul class="menu">
+                        <li class="home">
+                            <a href="~/Views/Home/Index.cshtml"><i class="fa fa-home"></i>Anasayfa</a>
+                        </li>
+                        <li>
+                            <a href="~/Views/Home/About.cshtml"><i class="fa fa-bookmark"></i>Hakkımızda</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-graduation-cap"></i>Eğitimler</a>
+                            <ul class="submenu">
+                                <li><a href="course-list.html">Course List Classic</a></li>
+                                <li><a href="course-grid.html">Course Grid</a></li>
+                                <li><a href="#">Course List In Table</a></li>
+                                <li><a href="#">Single Course</a></li>
+                                <li><a href="#">Tümü</a></li>
+                            </ul><!-- /.submenu -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-file-text"></i>Referanslar</a>
+                            <ul class="submenu submenu-right">
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="member.html">Members</a></li>
+                                <li><a href="member-single.html">Member Details</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="404.html">404</a></li>
+                                <li><a href="#">Tümü</a></li>
+                            </ul><!-- /.submenu -->
+                        </li>
+
+                        <li class="has-mega-menu">
+                            <a href="#"><i class="fa fa-phone"></i>İletişim</a>
+                        </li>
+                    </ul><!-- /.menu -->
+                </nav><!-- /.mainnav -->
+            </div>
+        </header>
+        <div>
+            @RenderBody()
+        </div>
+
+        @Html.Partial("_LayoutScripts")
+        @RenderSection("Scripts", required: false)
+</body>
+</html>

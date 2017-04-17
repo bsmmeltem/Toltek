@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cd92244e89c649b09fb5d772e884fe1c" Name="Diagram1">
+        <EntityTypeShape EntityType="TLMSPortalModel.Category" Width="1.5" PointX="21.75" PointY="119.5" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.ColorSet" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Mail" Width="1.5" PointX="3" PointY="1" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.MailTemplate" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Resource" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Setting" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Assignment" Width="1.5" PointX="18" PointY="98" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.AssignmentDates" Width="1.5" PointX="5.75" PointY="3.75" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.AssignmentEnrollment" Width="1.5" PointX="5.25" PointY="100.375" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.AssignmentFiles" Width="1.5" PointX="4.75" PointY="6.75" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.AssignmentStats" Width="1.5" PointX="20.25" PointY="105.5" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.AssignmentTitle" Width="1.5" PointX="26.25" PointY="99.5" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Company" Width="1.5" PointX="5.25" PointY="93.625" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.CompanySetting" Width="1.5" PointX="7.5" PointY="72.375" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.CompanyStats" Width="1.5" PointX="7.5" PointY="84.125" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Host" Width="1.5" PointX="7.5" PointY="75.375" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Invoice" Width="1.5" PointX="7.5" PointY="77.625" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Limit" Width="1.5" PointX="7.5" PointY="81" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Price" Width="1.5" PointX="6.75" PointY="6.75" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Social" Width="1.5" PointX="7.5" PointY="97.625" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Unit" Width="1.5" PointX="7.5" PointY="103.375" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.UnitManager" Width="1.5" PointX="9.75" PointY="100.5" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.UnitStats" Width="1.5" PointX="9.75" PointY="103" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.UnitTerms" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.UnitTitles" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Content" Width="1.5" PointX="21" PointY="97.25" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.ContentEnrollment" Width="1.5" PointX="26.25" PointY="93.25" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.ContentFile" Width="1.5" PointX="21" PointY="73.125" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.ContentFileStats" Width="1.5" PointX="23.25" PointY="74.5" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.ContentSession" Width="1.5" PointX="28.5" PointY="96.125" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.ContentStats" Width="1.5" PointX="23.25" PointY="105.375" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.ContentTitles" Width="1.5" PointX="23.5" PointY="79.875" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.ContentType" Width="1.5" PointX="18.75" PointY="78.625" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Link" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Container" Width="1.5" PointX="18" PointY="119.125" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Course" Width="1.5" PointX="12.75" PointY="96.625" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.CourseSales" Width="1.5" PointX="8.75" PointY="6.75" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.CourseSettings" Width="1.5" PointX="15" PointY="109.5" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.CourseStats" Width="1.5" PointX="15" PointY="111.875" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Enrollment" Width="1.5" PointX="18" PointY="104.375" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.EnrollmentStats" Width="1.5" PointX="20.25" PointY="108.75" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Group" Width="1.5" PointX="15" PointY="89" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.GroupStats" Width="1.5" PointX="17.25" PointY="83.875" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.GroupTeacher" Width="1.5" PointX="23.25" PointY="97.75" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Title" Width="1.5" PointX="21.25" PointY="79.375" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Exam" Width="1.5" PointX="17.25" PointY="89.375" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.ExamAnswer" Width="1.5" PointX="31.5" PointY="96.125" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.ExamDates" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.ExamEnrollment" Width="1.5" PointX="26.25" PointY="102.5" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.ExamQuestion" Width="1.5" PointX="19.5" PointY="88" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.ExamQuestionStats" Width="1.5" PointX="21.75" PointY="88.5" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.ExamQuestionTitles" Width="1.5" PointX="21.75" PointY="91.25" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.ExamSession" Width="1.5" PointX="28.5" PointY="90.125" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.ExamStats" Width="1.5" PointX="19.5" PointY="83.625" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.ExamTitles" Width="1.5" PointX="23.5" PointY="94.75" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Faq" Width="1.5" PointX="24" PointY="123.375" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.SupportCategory" Width="1.5" PointX="2.75" PointY="9.75" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.SupportTitle" Width="1.5" PointX="24" PointY="119.5" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Ticket" Width="1.5" PointX="26.25" PointY="108.75" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.TicketAction" Width="1.5" PointX="28.5" PointY="109.625" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.TicketMessage" Width="1.5" PointX="31.5" PointY="103.25" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Announce" Width="1.5" PointX="15" PointY="98" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Data" Width="1.5" PointX="4.75" PointY="9.75" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Days" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Report" Width="1.5" PointX="10.75" PointY="7.75" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.ReportCategory" Width="1.5" PointX="11.75" PointY="0.75" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.ReportQuery" Width="1.5" PointX="10.75" PointY="11.75" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Calendar" Width="1.5" PointX="12.75" PointY="3.75" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Control" Width="1.5" PointX="12.75" PointY="113.5" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.ControlCourse" Width="1.5" PointX="15" PointY="104.375" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Department" Width="1.5" PointX="9.75" PointY="113.125" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Faculty" Width="1.5" PointX="7.5" PointY="132.625" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Lesson" Width="1.5" PointX="17.25" PointY="112.125" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.SyncItem" Width="1.5" PointX="28.5" PointY="100.625" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.SyncLog" Width="1.5" PointX="30.75" PointY="107.25" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Term" Width="1.5" PointX="6.75" PointY="12.75" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Login" Width="1.5" PointX="10.5" PointY="95.5" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Payment" Width="1.5" PointX="5.25" PointY="106.125" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Request" Width="1.5" PointX="12.5" PointY="105.75" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.Role" Width="1.5" PointX="0.75" PointY="101.5" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.User" Width="1.5" PointX="3" PointY="96.5" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.UserClaims" Width="1.5" PointX="5.25" PointY="124.75" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.UserDevice" Width="1.5" PointX="5.25" PointY="127.5" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.UserInvoice" Width="1.5" PointX="22.75" PointY="109.5" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.UserLogins" Width="1.5" PointX="5.25" PointY="131" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.UserPermissions" Width="1.5" PointX="5.25" PointY="133.5" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.UserSimulates" Width="1.5" PointX="5.25" PointY="137.625" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.UserStats" Width="1.5" PointX="5.25" PointY="141.125" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.VClass" Width="1.5" PointX="20.25" PointY="111.125" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.VClassEnrollment" Width="1.5" PointX="5.25" PointY="144.375" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.VClassEnrollment_Bak" Width="1.5" PointX="12.75" PointY="7.75" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.VClassProvider" Width="1.5" PointX="7.5" PointY="142.125" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.VClassSchedule" Width="1.5" PointX="23.25" PointY="101.5" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.VClassStats" Width="1.5" PointX="22.5" PointY="113.75" IsExpanded="true" FillColor="Maroon" />
+        <EntityTypeShape EntityType="TLMSPortalModel.VClassTitles" Width="1.5" PointX="25.5" PointY="113.375" IsExpanded="true" FillColor="Maroon" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Faq_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_SupportTitle_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Mail_MailTemplate" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Assignment_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_AssignmentEnrollment_AssignmentItem" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_AssignmentItem_Group" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_AssignmentStats_AssignmentItem" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_AssignmentTitle_AssignmentItem" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_AssignmentEnrollment_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_AssignmentEnrollment_Enrollment" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_AssignmentEnrollment_Group" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_AssignmentEnrollment_User" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_AssignmentTitle_TemplateTitles" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Announce_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Company_User" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_CompanyHosts_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_CompanySetting_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_CompanySocial_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_CompanyStats_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Course_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Department_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Faculty_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Group_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Invoice_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Limit_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Login_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Unit_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Announce_Unit" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Course_Unit" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_SyncItem_Unit" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_UnitManager_Unit" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_UnitStats_Unit" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Content_Container" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Content_ContentType" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Content_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Content_Group" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ContentEnrollment_Content" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ContentSession_Content" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ContentStats_Content" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ContentEnrollment_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ContentEnrollment_Enrollment" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ContentEnrollment_Group" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ContentEnrollment_User" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ContentSession_ContentEnrollment" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ContentFile_ContentType" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_SourceFileStats_SourceFiles" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ContentSession_User" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_SourceTitles_TemplateTitles" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_VClass_Container" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Announce_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ControlCourse_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_CourseSettings_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_CourseStats_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Enrollment_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Exam_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ExamEnrollment_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Group_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_SyncItem_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_VClass_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_VClassSchedule_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Enrollment_Group" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Enrollment_Lesson" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Enrollment_SyncItem" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Enrollment_User" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_EnrollmentStats_Enrollment" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ExamEnrollment_Enrollment" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Ticket_Enrollment" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Announce_Group" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Exam_Group" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ExamEnrollment_Group" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_GroupStats_Group" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_GroupTeacher_Group" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Lesson_Group" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_SyncItem_Group" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_VClass_Group" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_VClassSchedule_Group" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_GroupTeacher_User" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ExamTitles_TemplateTitles" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_VClassTitles_TemplateTitles" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ExamAnswer_Exam" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ExamEnrollment_Exam" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ExamQuestion_Exam" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ExamSession_ExamItem" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ExamStats_ExamItem" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ExamTitles_ExamItem" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ExamAnswer_ExamEnrollment" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ExamAnswer_ExamQuestion" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ExamAnswer_ExamSession" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ExamAnswer_User" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ExamEnrollment_User" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ExamSession_ExamEnrollment" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ExamQuestionStats_ExamQuestion" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ExamQuestionTitles_ExamQuestion" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Ticket_SupportTitle" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Ticket_User" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_TicketAction_Ticket" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_TicketMessage_Ticket" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_TicketMessage_User" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_ControlCourse_Control" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Department_Faculty" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Lesson_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Lesson_Faculty" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_SyncItem_Lesson" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_SyncLog_SyncItem" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Login_User" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Payment_Request" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Payment_User" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Request_Payment" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Invoice_Request" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Request_Invoice" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Request_User" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Invoice_User" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Us_UserClaims_Us_User_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_Us_UserLogins_Us_User_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_UserDevice_User" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_UserPermissions_User" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_UserSimulates_User" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_UserStats_User" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_VClassEnrollment_VClass" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_VClass_VClassProvider" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_VClass_VClassSchedule" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_VClassStats_VClass" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.FK_VClassTitles_VClass" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.UserRoles" ManuallyRouted="false" />
+        <AssociationConnector Association="TLMSPortalModel.CompanyProvider" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
