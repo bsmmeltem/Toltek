@@ -1,0 +1,148 @@
+﻿@model IEnumerable<ToltekLMSPortal.Models.Course>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ImportKey)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UniqueKey)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CMode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Enable)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Paid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Deleted)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CUId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CUName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UUId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UUName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Company.CompanyName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Unit.UnitName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseSettings.CourseId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseStats.CourseId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ImportKey)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UniqueKey)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CMode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Enable)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Paid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Deleted)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CUId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CUName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UUId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UUName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Company.CompanyName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Unit.UnitName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseSettings.CourseId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseStats.CourseId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CourseId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CourseId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CourseId })
+        </td>
+    </tr>
+}
+
+</table>

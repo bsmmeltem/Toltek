@@ -1,0 +1,185 @@
+﻿@model ToltekLMSPortal.Models.Course
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Course</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ImportKey)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImportKey)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UniqueKey)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UniqueKey)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CMode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CMode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Enable)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Enable)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Paid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Paid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Deleted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Deleted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CUId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CUId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CUName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CUName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UUId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UUId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UUName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UUName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Company.CompanyName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Company.CompanyName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Unit.UnitName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Unit.UnitName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CourseSettings.CourseId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CourseSettings.CourseId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CourseStats.CourseId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CourseStats.CourseId)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
